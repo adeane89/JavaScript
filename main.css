@@ -1,0 +1,37 @@
+/*
+This is the universal selector...don't use it:
+
+*{
+also, this text shadow looks bad...
+text-shadow: 2px 2px 2px black;
+}
+*/
+
+html{
+    background-color: mintcream
+}
+
+.primary{
+    color: rgb(100,100,100);
+}
+
+.secondary{
+    color: lightblue;
+}
+
+h1{
+    color:teal
+}
+
+p{
+    color: gray;
+    font-family: 'Arial';
+}
+
+.alternate-heading{
+    color: rgb(100,150,150, 3);
+}
+
+.large{
+    font-size: 3em;
+}
