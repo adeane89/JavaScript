@@ -33,24 +33,24 @@ function sort(num1, num2, num3) {
                 alert(num1 + ", " +num3 + ", "+  num2);
             }
 }
+//problem two better
+numbers = [a,b,c];
+numbers = numbers.sort()
+alert(numbers);
 
 //problem three
 function greatest(n1, n2, n3, n4, n5) {
     var greatest = n1;
-    if(n2 > greatest)
-            {
+        if(n2 > greatest) {
                 greatest = n2;
             }
-            if(n3 > greatest)
-            {
+        if(n3 > greatest) {
                 greatest = n3;
             }
-        if(n4 > greatest)
-            {
+        if(n4 > greatest) {
                 greatest = n4;
             }
-        if(n5 > greatest)
-            {
+        if(n5 > greatest) {
                 greatest = n5;
             }
     alert(greatest);
@@ -85,10 +85,14 @@ function fizzBuzz(){
 }
 
 //problem six
-function thousand(){
+function thousand(upperBound){
+    if(upperBound === undefined){
+        upperBound = 1000;
+    }
+
     var count = 0;
-    for (var i = 1; i <= 1000; i++){
-        if (i % 3 === 0) {
+    for (var i = 1; i <= upperBound; i++){
+        if (i % 3 == 0) {
             count++;
         }
     }
@@ -113,31 +117,35 @@ function triangle() {
 }
 
 //problem eight
-function mirror(){
-    for(var i=1; i < 6; i++) {
+function mirror(maxWidth){
+    if (!maxWidth){
+        maxWidth = 5;
+    }
+    for(var i=1; i <= maxWidth; i++) {
         var output = "";
-        for(var j=1; j < 6-i; j++) {
+        for(var j=0; j < maxWidth-i; j++) {
             output +=" ";
         }
-        for(var k=1; k <= i; k++) {
+        for(var k=1; k < i; k++) {
            output += k;
         }
-        for (var m=i-1; m >= 1; m--) {
+        for (var m=i; m >= 1; m--) {
             output += m;
         }
         console.log(output);
     }
-        for(var i=4; i >=1; i--) {
-            var output ="";
-            for(var j=3; j > i; j--) {
-                output += " ";
-            }
-            for(var k=4; k >= i; k--) {
-                output += k;
-            }
-            for (var m=i+1; m <= 4; m++) {
-                output += m;
-            }
+    //only need to change the outer loop to decrement
+        for(var i=maxWidth-1; i > 0; i--) {
+              var output = "";
+        for(var j=0; j < maxWidth-i; j++) {
+            output +=" ";
+        }
+        for(var k=1; k < i; k++) {
+           output += k;
+        }
+        for (var m=i; m >= 1; m--) {
+            output += m;
+        }
              console.log(output);
     }
 }
@@ -162,4 +170,11 @@ function mirror(){
         }
 
         */
+//joe's eight
+function diamond(){
+
+}
+
+
+
 
