@@ -100,16 +100,19 @@ function thousand(upperBound){
 }
 
 //problem seven
-function triangle() {
-    for(var i=1; i < 6; i++) {
+function triangle(maxWidth) {
+    if (!maxWidth){
+        maxWidth = 5;
+    }
+    for(var i=1; i <= maxWidth; i++) {
         var output="";
-        for(var j=1; j < 6-i; j++) {
+        for(var j=0; j < maxWidth-i; j++) {
             output+=" ";
         }
-        for(var k=1; k <= i; k++) {
+        for(var k=1; k < i; k++) {
            output += k;
         }
-        for (var m=i-1; m >= 1; m--) {
+        for (var m=i; m >= 1; m--) {
             output += m;
         }
         console.log(output);
@@ -137,44 +140,15 @@ function mirror(maxWidth){
     //only need to change the outer loop to decrement
         for(var i=maxWidth-1; i > 0; i--) {
               var output = "";
-        for(var j=0; j < maxWidth-i; j++) {
-            output +=" ";
-        }
-        for(var k=1; k < i; k++) {
-           output += k;
-        }
-        for (var m=i; m >= 1; m--) {
-            output += m;
-        }
-             console.log(output);
+            for(var j=0; j < maxWidth-i; j++) {
+                output +=" ";
+            }
+            for(var k=1; k < i; k++) {
+               output += k;
+            }
+            for (var m=i; m >= 1; m--) {
+                output += m;
+            }
+                 console.log(output);
     }
 }
-
-
-//didnt work
-/*
-        if (i === 6) {
-        for(var r=6; r > 6; r--) {
-
-            output="";
-        for(var s=6; s < 6+r; s++) {
-            output+=" ";
-        }
-        for(var t=r-1; t >= r; t--) {
-           output += t;
-        }
-        for (var y=6; y >= 1; y--) {
-            output += y;
-        }
-        }
-        }
-
-        */
-//joe's eight
-function diamond(){
-
-}
-
-
-
-
