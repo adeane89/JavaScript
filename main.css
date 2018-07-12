@@ -5,7 +5,7 @@ This is the universal selector...don't use it:
 also, this text shadow looks bad...
 text-shadow: 2px 2px 2px black;
 }
-*/
+
 
 html{
     background-color: mintcream
@@ -35,3 +35,4 @@ p{
 .large{
     font-size: 3em;
 }
+*/

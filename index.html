@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>JavaScript</title>
-        <link rel="stylesheet" href="main.css">
+        <title>Boxes</title>
+        <style>
+            box{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 56.25px;
+                width: 56.25px;
+                background-image: url("spritesheet.png");
+                background-position-x: 0px;
+                background-position-y: 0px;
+            }
+        </style>
     </head>
     <body>
-        <h1 class="primary">Playing around with JavaScript</h1>
-
-        <article>
-            <h3 class="alternate-heading">Java in Console:</h3>
-            <p>
-
-            </p>
-        </article>
-            <h1 class="alternate-heading large"></h1>
-        <script src="app.js"></script>
+        <box></box>
+        <script src="box.js"></script>
     </body>
 </html>

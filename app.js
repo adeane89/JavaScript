@@ -34,9 +34,10 @@ function sort(num1, num2, num3) {
             }
 }
 //problem two better
-numbers = [a,b,c];
-numbers = numbers.sort()
-alert(numbers);
+//numbers = [a,b,c];
+//numbers = numbers.sort()
+//alert(numbers);
+//need helper function
 
 //problem three
 function greatest(n1, n2, n3, n4, n5) {
@@ -152,3 +153,57 @@ function mirror(maxWidth){
                  console.log(output);
     }
 }
+
+/*
+var randomPerson = {
+    name: "Jess",
+    age: 31,
+    gender: "female"
+}
+
+var employee = {
+    name: "Jess",
+    idnumber: 0,
+    title: "Teacher",
+    login: function() {this.idnumber = this.idnumber + this.name;}
+}
+
+var serializedEmployee = JSON.stringify(employee)
+var deserializedEmployee = JSON.parse(serializedEmployee);
+
+var req = new XMLHttpRequest();
+req.onload = function(event) {
+		deserializedEmployee = JSON.parse(event.currentTarget.response);
+		console.log('employee loaded') }
+
+req.open("GET", employee.json);
+req.send()
+*/
+
+document.onkeypress = function() {
+    console.log("Key pressed");
+    if (document.getElementsByTagName("body")[0].style.backgroundColor === "red") {
+       document.getElementsByTagName("body")[0].style.backgroundColor = "green";
+  } else {
+      document.getElementsByTagName("body")[0].style.backgroundColor = "red";
+  } if (document.getElementsByTagName("h1")[0].style.color === "white") {
+       document.getElementsByTagName("h1")[0].style.color = "yellow";
+  } else {
+      document.getElementsByTagName("h1")[0].style.color = "white";
+  }
+}
+
+//codewars problem
+function abbrevName(name){
+  return name.split(" ").pop().join(".");
+}
+
+
+
+
+
+
+
+
+
+
